@@ -25,7 +25,7 @@ def homepage():
     return "Hello World"
 
 @flask_app.route('/<name>')
-def hello_someone(name)
+def hello_someone(name):
     return render_template("hello.html", name=name.title())
 
 
